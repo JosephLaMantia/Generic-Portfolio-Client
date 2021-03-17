@@ -14,13 +14,12 @@
 .profile {
   display: flex;
   justify-content: center;
-  margin-right: 20vw;
+  margin-right: 10vw;
 }
 
 .menu-image {
   padding: 5vw;
   padding-right: 3vw;
-  margin-left: 5vw;
   height: 4vw;
 }
 
@@ -43,6 +42,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+  margin-top: -5vh;
 }
 
 .about {
@@ -57,16 +57,29 @@
 
 .contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  margin-left: 2vw;
-  filter: drop-shadow(3px 3px 3px rgb(0, 0, 0));
-  
+  align-items: center;
 }
 
 .icon {
-  padding: .5vh;
-  background-color: rgb(255, 255, 255, .9);
+  padding: .8vh;
+  margin: .5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon a {
+  padding-right: 2px;
+  font-size: 1.5vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.icon a:hover {
+  color: rgb(0, 0, 0);
 }
 
 
@@ -86,4 +99,48 @@
 .PostCard {
   margin: 1vw;
   filter: drop-shadow(3px 3px 3px rgb(184, 184, 184));
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  padding-right: 2px;
+  font-size: 1.5vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.footer a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.footer-link .icon {
+  padding: 0px !important;
+  padding-bottom: 1px !important;
+}
+
+/* responsive */
+
+@media (max-width: 709px) {
+
+  .Menu {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  .menu-text {
+    padding-top: 4vh;
+  }
+
+  .Card {
+    width: 10vw;
+  }
 }

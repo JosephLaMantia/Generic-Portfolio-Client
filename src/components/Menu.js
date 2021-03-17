@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Mail } from 'react-feather';
+
 
 export default () => {
     return (
@@ -15,16 +15,22 @@ export default () => {
                         Kevin Mendez • Brooklyn NYC <br/>
                         📸 • Lover of the arts and music • Creator of peace!</div>
                 </div>
-                <div className='contact'>
-                <div className='icon'>
-                    <Instagram color='black' size={48}/>
-                </div>
-                <div className='icon'>
-                    <Mail color='black' size={48}/>
-                </div>
-                </div>
             </div>
-            
         </div>
     )
 }
+
+
+{/* <div className='contact'>
+                <div className='icon'>
+                    <a href="https://www.instagram.com/mndeezy/">
+                        <Instagram color='black' size={20} strokeWidth='2px'/>@mndeezy
+                    </a>
+                </div>
+                <div className='icon'>
+                    <a href="mailto: kvnmendez10@gmail.com">
+                    <Mail color='black' size={20} strokeWidth='2px'/>
+                        kvnmendez10@gmail.com
+                    </a>
+                </div>
+                </div> */}
