@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Container, Row, Col} from 'react-bootstrap';
 
 import PostCard from './PostCard'
 
@@ -19,14 +20,17 @@ export default function Posts() {
     return (
         <div className="Posts">
       {posts.map(post => (
+
+          
         <PostCard
           title = {post.Title}
           url={post.Image && post.Image.url}
           date={post.Date}
           link={post.Link}
-          description = {post.Description}
-          
+          description = {post.Description}  
         />
+
+
        ))}
     </div>
     )
