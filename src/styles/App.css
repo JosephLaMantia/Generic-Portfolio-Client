@@ -101,6 +101,14 @@
   filter: drop-shadow(3px 3px 3px rgb(184, 184, 184));
 }
 
+.PostCard a{
+  color: black;
+}
+
+.PostCard a:hover{
+  color: black;
+}
+
 /* Footer */
 .footer {
   display: flex;
