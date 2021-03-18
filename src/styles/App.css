@@ -1,13 +1,13 @@
 
 
 .Menu {
-  background-image: ;
   background-size: cover;              
   color: white;
   display: flex;
   justify-content: center;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
   box-shadow: -5px 5px 15px rgb(0, 0, 0);
-  width: 100vw;
+  width: auto;
   height: 22vw;
 }
 
