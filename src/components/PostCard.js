@@ -6,7 +6,7 @@ export default ({title, url, date, link, description}) => {
 
     return (
         <div className="PostCard">
-            <Card style={{ width: '100%', borderWidth: '0px' }}>
+            <Card style={{ width: '100%', borderWidth: '0px', maxWidth: '500px' }}>
             <a href={link}><Card.Img variant="top" src={url}/></a>
             <Card.Body>
                 <Card.Title style={{textAlign: 'center'}}>{title}</Card.Title>

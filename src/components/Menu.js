@@ -1,19 +1,58 @@
-import React from 'react';
-
+import React, {useState, useEffect} from 'react';
 
 export default () => {
+
+    //Avatar
+    const [avatar, setAvatar] = useState([]);
+
+    useEffect(() => {
+        const getAvatar = async () => {
+          const response = await fetch('https://kevinmendezportfolio.herokuapp.com/avatar');
+          const data = await response.json();
+          setAvatar(data);
+        }
+    
+        getAvatar()
+      }, [])
+
+        //Hero Image
+        const [hero, setHero] = useState([]);
+
+        useEffect(() => {
+            const getHero = async () => {
+              const response = await fetch('https://kevinmendezportfolio.herokuapp.com/hero-image');
+              const data = await response.json();
+              setHero(data);
+            }
+        
+            getHero()
+          }, [])
+
+          
+
+    //About Me section
+    const [aboutMe, setAboutMe] = useState([]);
+
+    useEffect(() => {
+        const getAboutMe = async () => {
+          const response = await fetch('https://kevinmendezportfolio.herokuapp.com/about-me');
+          const data = await response.json();
+          setAboutMe(data);
+        }
+    
+        getAboutMe()
+      }, [])
+
     return (
-        <div className='Menu'>
+        <div className='Menu' style= {{backgroundImage: `url(${hero.hero && hero.hero.url})`}}>
             <div className='profile'>
                 <div className='menu-image'>
-                    <img className='menu-img' src='https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/s150x150/106255519_269846507623479_4769160507401469908_n.jpg?tp=1&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_ohc=UykXa-Ho_aUAX_nCpyB&ccb=7-4&oh=993b3b4730e464cfbaa69d4c070856f9&oe=607D6557'>
+                    <img className='menu-img' src={avatar.image && avatar.image.url}>
                     </img>
                 </div>
                 <div className='menu-text'>
                     <div className='menu-title'>MNDZ</div>
-                    <div className='about'>
-                        Kevin Mendez • Brooklyn NYC <br/>
-                        📸 • Lover of the arts and music • Creator of peace!</div>
+                    <div className='about'>{aboutMe.about}</div>
                 </div>
             </div>
         </div>
