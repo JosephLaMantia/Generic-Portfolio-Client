@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Menu/>
-      <ContactBar/>
+      <ContactBar/> 
       <Posts/>
       <Footer/>
     </div>
