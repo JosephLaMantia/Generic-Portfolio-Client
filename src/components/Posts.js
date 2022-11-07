@@ -8,8 +8,9 @@ export default function Posts() {
 
     useEffect(() => {
         const getPosts = async () => {
-          const response = await fetch('https://kevinmendezportfolio.herokuapp.com/posts');
+          const response = await fetch('http://localhost:1337/posts');
           const data = await response.json();
+          console.log(data)
           setPosts(data);
         }
     

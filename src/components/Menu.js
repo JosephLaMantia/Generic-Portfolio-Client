@@ -7,7 +7,7 @@ export default () => {
 
     useEffect(() => {
         const getAvatar = async () => {
-          const response = await fetch('https://kevinmendezportfolio.herokuapp.com/avatar');
+          const response = await fetch('http://localhost:1337/avatar');
           const data = await response.json();
           setAvatar(data);
         }
@@ -20,7 +20,7 @@ export default () => {
 
         useEffect(() => {
             const getHero = async () => {
-              const response = await fetch('https://kevinmendezportfolio.herokuapp.com/hero-image');
+              const response = await fetch('http://localhost:1337/hero-image');
               const data = await response.json();
               setHero(data);
             }
@@ -35,7 +35,7 @@ export default () => {
 
     useEffect(() => {
         const getAboutMe = async () => {
-          const response = await fetch('https://kevinmendezportfolio.herokuapp.com/about-me');
+          const response = await fetch('http://localhost:1337/about-me');
           const data = await response.json();
           setAboutMe(data);
         }
@@ -51,25 +51,10 @@ export default () => {
                     </img>
                 </div>
                 <div className='menu-text'>
-                    <div className='menu-title'>MNDZ</div>
+                    <div className='menu-title'>JLSolutions</div>
                     <div className='about'>{aboutMe.about}</div>
                 </div>
             </div>
         </div>
     )
 }
-
-
-{/* <div className='contact'>
-                <div className='icon'>
-                    <a href="https://www.instagram.com/mndeezy/">
-                        <Instagram color='black' size={20} strokeWidth='2px'/>@mndeezy
-                    </a>
-                </div>
-                <div className='icon'>
-                    <a href="mailto: kvnmendez10@gmail.com">
-                    <Mail color='black' size={20} strokeWidth='2px'/>
-                        kvnmendez10@gmail.com
-                    </a>
-                </div>
-                </div> */}
