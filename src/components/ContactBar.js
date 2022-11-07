@@ -12,7 +12,7 @@ export default () => {
                 <div className='icon'>
                     <a href="mailto: test@gmail.com"><Mail color='black' size={20} strokeWidth='2px'/></a>
                     <div><a href='mailto: test@gmail.com'>test@gmail.com</a></div>
-                </div>
+                </div> 
                 </div>
     )
 }

@@ -12,7 +12,7 @@ export default ({title, url, date, link, description}) => {
                 <Card.Title style={{textAlign: 'center'}}>{title}</Card.Title>
                 <Card.Text style={{textAlign: 'center', paddingBottom: '3vh'}}>{description}</Card.Text>
                 <Card.Text style={{fontSize: '1.4vh'}}><a href={link}><Instagram size={20}/></a> {date}</Card.Text>
-            </Card.Body>
+            </Card.Body> 
             </Card>
         </div>
     )

@@ -49,7 +49,7 @@ export default () => {
                 <div className='menu-image'>
                     <img className='menu-img' src={avatar.image && avatar.image.url}>
                     </img>
-                </div>
+                </div> 
                 <div className='menu-text'>
                     <div className='menu-title'>JLSolutions</div>
                     <div className='about'>{aboutMe.about}</div>
